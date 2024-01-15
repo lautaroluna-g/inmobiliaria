@@ -13,7 +13,7 @@ export interface InmuebleCard {
 
 export enum TipoInmueble {
     Lote = "Lote",
-    Departamento = "Departamento",
+    Departamento = "Dpto",
     Chalet = "Chalet",
     Duplex = "Duplex",
     Casa = "Casa",
