@@ -1,0 +1,11 @@
+<ngx-slick-carousel class="carousel"
+                    #slickModal="slick-carousel"
+                    [config]="slideConfig">
+  
+    @for (item of items; track $index) {
+        <div class="box-border p-2.5 ">
+            <card-inmueble ngxSlickItem [content]="item"/> 
+        </div>
+    }     
+
+</ngx-slick-carousel>

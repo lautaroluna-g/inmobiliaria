@@ -1,0 +1,30 @@
+<div class="bg-white shadow-2xl rounded aspect-square relative p-2 m-1 cursor-pointer">
+    <!-- TODO: pipe para card sin imagen -->
+    <div class="relative bg-cover rounded bg-center h-3/5"
+        style="background-image: url({{content!.img[0]}});">
+        <div class="absolute rounded-xl bottom-0 bg-gray-900 bg-opacity-80 text-3xl p-3 m-2 text-white text-bold shadow-xl " > {{content?.moneda | currencyPipe}} {{content!.precio}}</div>
+        <div class="absolute  rounded-2xl right-0 bottom-0 text-right text-xl p-2 m-2 text-white font-bold bg-gray-900 bg-opacity-20">
+            <div class="flex justify-items-center align-content-center">
+                <span class="material-symbols-outlined p-1"> photo_library</span>
+                <h4> {{content!.img.length}}</h4>
+            </div>   
+        </div>
+    </div>    
+    <h1 class="text-2xl font-bold text-gray-700">{{content!.title}}</h1>
+    <div class="flex justify-items-center align-content-center font-semibold text-gray-500">
+        <span class="material-symbols-outlined"> location_on</span>
+        <h2>{{content!.ubicacion}}</h2>
+    </div>
+    <div class="flex justify-items-center align-content-center font-semibold text-gray-600 text-xl my-5">
+        <span class="material-symbols-outlined p-1">{{content!.tipo | tipoInmueble}}</span>
+        <h2>{{content!.tipo}}</h2>
+        <span class="ml-auto material-symbols-outlined p-1">deployed_code</span>
+        <h2>{{content?.metros}} m<sup>2</sup></h2>
+    </div>
+    <div class="flex justify-items-center align-content-center text-gray-600 text-xl my-5">
+        <span class="material-symbols-outlined p-1">bed</span>
+        <h2>{{content?.cantDormitorios}} Dormitorios</h2>
+        <span class="ml-auto material-symbols-outlined p-1">bathtub</span>
+        <h2>{{content?.cantBanios}} Baños</h2>
+    </div>
+</div>

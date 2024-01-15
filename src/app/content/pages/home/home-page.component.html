@@ -1,4 +1,16 @@
-<app-title title="Home"></app-title>
-<div  class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
-    <p>home-page works!</p>
+<div class="px-8">
+    <div class="relative h-96 overflow-hidden">
+        <img class="absolute min-h-full bottom-0 mb-[-20%]" src="https://images.pexels.com/photos/17225343/pexels-photo-17225343/free-photo-of-arte-punto-de-referencia-edificio-viaje.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+        <h1 class="absolute text-white text-6xl font-bold p-4 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+           Office <br>
+           space <br>
+           your way.
+        </h1>
+        
+    </div>
+        
+    <div class="w-2/3 h-30rem bg-gray-900 bg-opacity-70 rounded-lg shadow p-5 transform -translate-y-14 m-auto">
+        <h2 class="text text-center text-3xl text-gray-50 font-bold">Propiedades destacadas</h2>
+        <app-carousel [items]="propiedades"></app-carousel>
+    </div>
 </div>

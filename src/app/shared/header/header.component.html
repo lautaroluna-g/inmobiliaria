@@ -1,19 +1,19 @@
 
 <div  class="min-h-full">
-    <nav  class="bg-gray-800">
+    <nav  class="bg-gray-900">
       <div  class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div  class="flex h-16 items-center justify-between">
+        <div  class="flex h-28 items-center justify-between">
           <div  class="flex items-center">
 
             <div  class="flex-shrink-0">
-              <img  class="h-12 w-12" src="assets/icons/hotel.png" alt="Inmobiliaria">
+              <img  routerLink="/home" class="h-12 w-12" src="assets/icons/hotel.png" alt="Inmobiliaria" style="cursor:pointer;">
             </div>
 
 
             <div  class="hidden md:block">
               <div  class="ml-10 flex items-baseline space-x-4">
                 @for (page of options; track $index) {
-                    <button  class="bg-gray-800 text-white rounded-md px-3 py-3 text-sm font-medium hover:bg-gray-700 hover:text-white" routerLink={{page.link}} routerLinkActive="active" >{{page.title}}</button>
+                    <button  class="bg-gray-900 text-white rounded-md px-3 py-3 text-sm font-medium hover:bg-gray-700 hover:text-white" routerLink={{page.link}} routerLinkActive="active" >{{page.title}}</button>
                 }
               </div>
             </div>
