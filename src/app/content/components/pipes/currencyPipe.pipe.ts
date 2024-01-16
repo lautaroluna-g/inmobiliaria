@@ -8,7 +8,7 @@ import { Moneda } from '../../interfaces/card-inmueble.interface';
 export class CurrencyPipe implements PipeTransform {
 
   transform(value?: number){
-    if(value)
+    if(value != null)
       return Moneda[value]
     return 'N/C'
   }

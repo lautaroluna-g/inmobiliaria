@@ -1,4 +1,37 @@
-<app-title title="Contacto"></app-title>
-<div  class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
-    <p>contacto-page works!</p>
+<app-title title="Contáctenos"></app-title>
+<div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8 ">
+    <form class="max-w-sm">
+
+        <label for="email-address-icon" class="block mb-2 text-lg text-gray-900 ">Email</label>
+        <div class="relative">
+            <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
+                <svg class="w-4 h-4 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" viewBox="0 0 20 16">
+                    <path
+                        d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z" />
+                    <path
+                        d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z" />
+                </svg>
+            </div>
+            <input type="text" id="email-address-icon"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  0 y-600 r-gray-400  -blue-500 er-blue-500"
+                placeholder="juan_pedro@ejemplo.com">
+        </div>
+
+        <div class="mt-5">
+            <label for="base-input" class="block mb-1 text-lg text-gray-900">Asunto</label>
+            <input type="text" id="base-input" placeholder="Motivo de su consulta"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+        </div>
+
+        <textarea id="message" rows="4"
+            class="block p-2.5 mt-8 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-900 focus:border-blue-900"
+            placeholder="Dejenos su comentario..."></textarea>
+
+        <div class="col-span-full flex py-4 items-center justify-end gap-x-6">
+            <button type="button" class="text-sm font-semibold leading-6">Cancelar</button>
+            <button type="submit"
+                class="rounded-md bg-orange-600 px-3 p-2 text-sm font-semibold text-white shadow-sm hover:bg-orange-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Enviar</button>
+            </div>
+    </form>
 </div>

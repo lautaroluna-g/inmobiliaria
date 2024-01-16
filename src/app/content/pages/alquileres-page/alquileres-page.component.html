@@ -1,4 +1,20 @@
 <app-title title="Alquileres"></app-title>
-<div  class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
-    <p>alquileres-page works!</p>
+<div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
+    
+    <div class="block py-4 md:py-8 flex-wrap">
+       
+        <div class="card flex justify-content-center">
+            <p-dropdown color [options]="filtros.ambientes" [(ngModel)]="selectedAmbiente" [showClear]="true" placeholder="Ambientes"></p-dropdown>
+        </div>
+    </div>
+
+    <h2 class="text text-center text-3xl text-gray-800 font-bold">Propiedades en alquiler</h2>
+    <div class="grid mt-10 xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-1">
+        @for (propiedad of propiedades; track $index) {
+        <div class="col-span-1 gap-5">
+            <card-inmueble [content]="propiedad"></card-inmueble>
+        </div>
+        }
+    </div>
+
 </div>
